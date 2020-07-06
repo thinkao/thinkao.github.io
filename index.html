@@ -1,193 +1,112 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-  <meta name="theme-color" content="#202020"/>
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
-  
-  
-    <meta name="keywords" content="" />
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#202020"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
 
-  
-    <meta name="description" content="Hexo," />
-  
-  
-  <link rel="icon" type="image/x-icon" href="/logo.png">
-  <title> Thinkao的个人博客 </title>
-  
+
+    <meta name="keywords" content=""/>
+
+
+    <meta name="description" content="Hexo,"/>
+
+
+    <link rel="icon" type="image/x-icon" href="/logo.png">
+    <title> Thinkao的个人博客 </title>
+
     <!-- stylesheets list from config.yml -->
-    
-      <link rel="stylesheet" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css">
-    
-      <link rel="stylesheet" href="/css/xoxo.css">
-    
-  
-<meta name="generator" content="Hexo 4.2.1"></head>
 
-<!--代码放置于</body>上方-->
+    <link rel="stylesheet" href="//cdn.bootcss.com/pure/1.0.0/pure-min.css">
 
-<script>
+    <link rel="stylesheet" href="/css/xoxo.css">
 
-    !function(){
 
-        function n(n,e,t){
+    <meta name="generator" content="Hexo 4.2.1">
+</head>
 
-            return n.getAttribute(e)||t
 
-        }
-
-        function e(n){
-
-            return document.getElementsByTagName(n)
-
-        }
-
-        function t(){
-
-            var t=e("script"),o=t.length,i=t[o-1];
-
-            return{
-
-                l:o,z:n(i,"zIndex",-1),o:n(i,"opacity",.5),c:n(i,"color","0,0,0"),n:n(i,"count",99)
-
-            }
-
-        }
-
-        function o(){
-
-            a=m.width=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth,
-
-                c=m.height=window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight
-
-        }
-
-        function i(){
-
-            r.clearRect(0,0,a,c);
-
-            var n,e,t,o,m,l;
-
-            s.forEach(function(i,x){
-
-                for(i.x+=i.xa,i.y+=i.ya,i.xa*=i.x>a||i.x<0?-1:1,i.ya*=i.y>c||i.y<0?-1:1,r.fillRect(i.x-.5,i.y-.5,1,1),e=x+1;e<u.length;e++)n=u[e],
-
-                null!==n.x&&null!==n.y&&(o=i.x-n.x,m=i.y-n.y,
-
-                    l=o*o+m*m,l<n.max&&(n===y&&l>=n.max/2&&(i.x-=.03*o,i.y-=.03*m),
-
-                    t=(n.max-l)/n.max,r.beginPath(),r.lineWidth=t/2,r.strokeStyle="rgba("+d.c+","+(t+.2)+")",r.moveTo(i.x,i.y),r.lineTo(n.x,n.y),r.stroke()))
-
-            }),
-
-                x(i)
-
-        }
-
-        var a,c,u,m=document.createElement("canvas"),
-
-            d=t(),l="c_n"+d.l,r=m.getContext("2d"),
-
-            x=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||
-
-                function(n){
-
-                    window.setTimeout(n,1e3/45)
-
-                },
-
-            w=Math.random,y={x:null,y:null,max:2e4};m.id=l,m.style.cssText="position:fixed;top:0;left:0;z-index:"+d.z+";opacity:"+d.o,e("body")[0].appendChild(m),o(),window.onresize=o,
-
-            window.onmousemove=function(n){
-
-                n=n||window.event,y.x=n.clientX,y.y=n.clientY
-
-            },
-
-            window.onmouseout=function(){
-
-                y.x=null,y.y=null
-
-            };
-
-        for(var s=[],f=0;d.n>f;f++){
-
-            var h=w()*a,g=w()*c,v=2*w()-1,p=2*w()-1;s.push({x:h,y:g,xa:v,ya:p,max:6e3})
-
-        }
-
-        u=s.concat([y]),
-
-            setTimeout(function(){i()},100)
-
-    }();
-
-</script>
 <body>
-  <div class="nav-container">
+<div class="nav-container">
     <nav class="home-menu pure-menu pure-menu-horizontal">
-  <a class="pure-menu-heading" href="/">
-    <img class="avatar" src="logo.png">
-    <span class="title">Thinkao</span>
-  </a>
+        <a class="pure-menu-heading" href="/">
+            <img class="avatar" src="logo.png">
+            <span class="title">Thinkao</span>
+        </a>
 
-  <ul class="pure-menu-list clearfix">
-      
-          
+        <ul class="pure-menu-list clearfix">
+
+
             <li class="pure-menu-item actived"><a href="/" class="pure-menu-link">Home</a></li>
-          
+
 
             <li class="pure-menu-item"><a href="html/books" class="pure-menu-link">Books</a></li>
 
-          
+
             <li class="pure-menu-item"><a href="html/articles" class="pure-menu-link">Articles</a></li>
-          
+
 
             <li class="pure-menu-item"><a href="html/work" class="pure-menu-link">Work</a></li>
 
 
             <li class="pure-menu-item"><a href="html/about" class="pure-menu-link">About</a></li>
-      
 
-      
-  </ul>
-   
-</nav>
-  </div>
 
-  <div class="container" id="content-outer">
+        </ul>
+
+    </nav>
+</div>
+
+<div class="container" id="content-outer">
     <div class="inner" id="content-inner">
-      
 
-  <div class="recent-posts">
-    
 
-      <article class="recent-post-item">
-        <a class="title" href="/"><h2>王鑫垚的个人主页</h2></a>
-        <div class="post-meta">
-          
-          <p style="font-size: 16px" id="clock"></p>
+        <div class="recent-posts">
+
+
+            <article class="recent-post-item">
+                <a class="title" href="/"><h2>王鑫垚的个人主页</h2></a>
+                <div class="post-meta">
+
+                    <p style="font-size: 16px" id="clock"></p>
+
+                </div>
+
+            </article>
 
         </div>
-
-      </article>
-    
-  </div>
-
 
 
     </div>
 
-    
+    <div>
 
-  </div>
-  <footer class="footer text-center">
+        <div class="cardBox">
+            <div class="headerBox" style="background-color: #4caf50;">
+                <p>
+                    <a title="查看详情" style="cursor: pointer; color:white" onclick="viewXmInfo('${var.OMP_XM_ID}');">项目名称一</a>
+                </p>
+            </div>
+            <div class="bodyBox">
+                <p>项目经理：成柯</p>
+                <p>项目主管：王江</p>
+                <p>项目状态：
+                    <a href="javascript:void(0)" class="label label-success" style="border-radius: .25em;">启动</a>
+                </p>
+                <p>异常状态：<span style="color:green">无异常</span></p>
+                <p>加工量：1,817,375</p>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+<footer class="footer text-center">
     <div id="bottom-inner">
         <a class="bottom-item" href="https://blog.0xff000000.com" target="_blank" rel="noopener">首页</a> |
         <a class="bottom-item" href="https://0xff000000.com" target="_blank">主站</a> |
@@ -196,149 +115,173 @@
         <a class="bottom-item" href="https://github.com/KevinOfNeu/hexo-theme-xoxo" target="_blank">Theme xoxo</a>
     </div>
 </footer>
-  
+
 
 <script>
 
-  (function(window, document, undefined) {
+    (function (window, document, undefined) {
 
-    var timer = null;
+        var timer = null;
 
-    function returnTop() {
-      cancelAnimationFrame(timer);
-      timer = requestAnimationFrame(function fn() {
-        var oTop = document.body.scrollTop || document.documentElement.scrollTop;
-        if (oTop > 0) {
-          document.body.scrollTop = document.documentElement.scrollTop = oTop - 50;
-          timer = requestAnimationFrame(fn);
-        } else {
-          cancelAnimationFrame(timer);
+        function returnTop() {
+            cancelAnimationFrame(timer);
+            timer = requestAnimationFrame(function fn() {
+                var oTop = document.body.scrollTop || document.documentElement.scrollTop;
+                if (oTop > 0) {
+                    document.body.scrollTop = document.documentElement.scrollTop = oTop - 50;
+                    timer = requestAnimationFrame(fn);
+                } else {
+                    cancelAnimationFrame(timer);
+                }
+            });
         }
-      });
-    }
 
-    var hearts = [];
-    window.requestAnimationFrame = (function() {
-      return window.requestAnimationFrame ||
-        window.webkitRequestAnimationFrame ||
-        window.mozRequestAnimationFrame ||
-        window.oRequestAnimationFrame ||
-        window.msRequestAnimationFrame ||
-        function(callback) {
-          setTimeout(callback, 1000 / 60);
+        var hearts = [];
+        window.requestAnimationFrame = (function () {
+            return window.requestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                window.mozRequestAnimationFrame ||
+                window.oRequestAnimationFrame ||
+                window.msRequestAnimationFrame ||
+                function (callback) {
+                    setTimeout(callback, 1000 / 60);
+                }
+        })();
+        init();
+
+        function init() {
+            css(".heart{z-index:9999;width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: absolute;}.heart:after{top: -5px;}.heart:before{left: -5px;}");
+            attachEvent();
+            gameloop();
+            addMenuEvent();
         }
-    })();
-    init();
 
-    function init() {
-      css(".heart{z-index:9999;width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: absolute;}.heart:after{top: -5px;}.heart:before{left: -5px;}");
-      attachEvent();
-      gameloop();
-      addMenuEvent();
-    }
-
-    function gameloop() {
-      for (var i = 0; i < hearts.length; i++) {
-        if (hearts[i].alpha <= 0) {
-          document.body.removeChild(hearts[i].el);
-          hearts.splice(i, 1);
-          continue;
-        }
-        hearts[i].y--;
-        hearts[i].scale += 0.004;
-        hearts[i].alpha -= 0.013;
-        hearts[i].el.style.cssText = "left:" + hearts[i].x + "px;top:" + hearts[i].y + "px;opacity:" + hearts[i].alpha + ";transform:scale(" + hearts[i].scale + "," + hearts[i].scale + ") rotate(45deg);background:" + hearts[i].color;
-      }
-      requestAnimationFrame(gameloop);
-    }
-
-    /**
-     * 给logo设置点击事件
-     * 
-     * - 回到顶部
-     * - 出现爱心
-     */
-    function attachEvent() {
-      var old = typeof window.onclick === "function" && window.onclick;
-      var logo = document.getElementById("logo");
-      if (logo) {
-        logo.onclick = function(event) {
-          returnTop();
-          old && old();
-          createHeart(event);
-        }
-      }
-      
-    }
-
-    function createHeart(event) {
-      var d = document.createElement("div");
-      d.className = "heart";
-      hearts.push({
-        el: d,
-        x: event.clientX - 5,
-        y: event.clientY - 5,
-        scale: 1,
-        alpha: 1,
-        color: randomColor()
-      });
-      document.body.appendChild(d);
-    }
-
-    function css(css) {
-      var style = document.createElement("style");
-      style.type = "text/css";
-      try {
-        style.appendChild(document.createTextNode(css));
-      } catch (ex) {
-        style.styleSheet.cssText = css;
-      }
-      document.getElementsByTagName('head')[0].appendChild(style);
-    }
-
-    function randomColor() {
-      // return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + ")";
-      return "#F44336";
-    }
-
-    function addMenuEvent() {
-      var menu = document.getElementById('menu-main-post');
-      if (menu) {
-        var toc = document.getElementById('toc');
-        if (toc) {
-          menu.onclick = function() {
-            if (toc) {
-              if (toc.style.display == 'block') {
-                toc.style.display = 'none';
-              } else {
-                toc.style.display = 'block';
-              }
+        function gameloop() {
+            for (var i = 0; i < hearts.length; i++) {
+                if (hearts[i].alpha <= 0) {
+                    document.body.removeChild(hearts[i].el);
+                    hearts.splice(i, 1);
+                    continue;
+                }
+                hearts[i].y--;
+                hearts[i].scale += 0.004;
+                hearts[i].alpha -= 0.013;
+                hearts[i].el.style.cssText = "left:" + hearts[i].x + "px;top:" + hearts[i].y + "px;opacity:" + hearts[i].alpha + ";transform:scale(" + hearts[i].scale + "," + hearts[i].scale + ") rotate(45deg);background:" + hearts[i].color;
             }
-          };
-        } else {
-          menu.style.display = 'none';
+            requestAnimationFrame(gameloop);
         }
-      }
+
+        /**
+         * 给logo设置点击事件
+         *
+         * - 回到顶部
+         * - 出现爱心
+         */
+        function attachEvent() {
+            var old = typeof window.onclick === "function" && window.onclick;
+            var logo = document.getElementById("logo");
+            if (logo) {
+                logo.onclick = function (event) {
+                    returnTop();
+                    old && old();
+                    createHeart(event);
+                }
+            }
+
+        }
+
+        function createHeart(event) {
+            var d = document.createElement("div");
+            d.className = "heart";
+            hearts.push({
+                el: d,
+                x: event.clientX - 5,
+                y: event.clientY - 5,
+                scale: 1,
+                alpha: 1,
+                color: randomColor()
+            });
+            document.body.appendChild(d);
+        }
+
+        function css(css) {
+            var style = document.createElement("style");
+            style.type = "text/css";
+            try {
+                style.appendChild(document.createTextNode(css));
+            } catch (ex) {
+                style.styleSheet.cssText = css;
+            }
+            document.getElementsByTagName('head')[0].appendChild(style);
+        }
+
+        function randomColor() {
+            // return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + ")";
+            return "#F44336";
+        }
+
+        function addMenuEvent() {
+            var menu = document.getElementById('menu-main-post');
+            if (menu) {
+                var toc = document.getElementById('toc');
+                if (toc) {
+                    menu.onclick = function () {
+                        if (toc) {
+                            if (toc.style.display == 'block') {
+                                toc.style.display = 'none';
+                            } else {
+                                toc.style.display = 'block';
+                            }
+                        }
+                    };
+                } else {
+                    menu.style.display = 'none';
+                }
+            }
+        }
+
+    })(window, document);
+
+    setInterval("showTime()", 1000)
+
+    function showTime() {
+        var t = new Date()
+        var year = t.getFullYear()
+        var month = t.getMonth() + 1
+        var day = t.getDate()
+        var showTime = year + "/" + month + "/" + day
+
+        document.getElementById("clock").innerHTML = showTime
     }
-
-  })(window, document);
-
-  setInterval("showTime()",1000)
-  function showTime() {
-      var t = new Date()
-      var year = t.getFullYear()
-      var month = t.getMonth()+1
-      var day = t.getDate()
-      var showTime = year+"/"+month+"/"+day
-
-      document.getElementById("clock").innerHTML = showTime
-  }
 
 </script>
+<style type="text/css">
 
-  
+    .cardBox {
+        width: 200px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+        float: left;
+        margin-right: 10px;
+        padding: 5px;
+        padding-top: 15px;
+    }
 
+    .headerBox {
+        color: #fff;
+        padding: 10px;
+        font-size: 15px;
+        height: 60px;
+    }
 
+    .bodyBox {
+        padding: 10px;
+    }
+
+    .bodyBox p {
+        margin-left: 5px;
+    }
+</style>
 
 </body>
 </html>
