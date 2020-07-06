@@ -74,7 +74,7 @@
         <a class="title" href="/"><h2>王鑫垚的个人主页</h2></a>
         <div class="post-meta">
           
-          <p type="text" id="clock"></p>
+          <p id="clock"></p>
 
         </div>
 
@@ -233,7 +233,7 @@
       var day = t.getDay()
       var showTime = year+"/"+month+"/"+day
 
-      document.getElementById("clock").value = showTime
+      document.getElementById("clock").innerHTML = showTime
   }
 
 </script>
