@@ -36,7 +36,7 @@
     <nav class="home-menu pure-menu pure-menu-horizontal">
   <a class="pure-menu-heading" href="/">
     <img class="avatar" src="logo.png">
-    <span class="title">Hexo</span>
+    <span class="title">Thinkao</span>
   </a>
 
   <ul class="pure-menu-list clearfix">
@@ -44,26 +44,19 @@
           
             <li class="pure-menu-item actived"><a href="/" class="pure-menu-link">Home</a></li>
           
+
+            <li class="pure-menu-item"><a href="html/books" class="pure-menu-link">Books</a></li>
+
+          
+            <li class="pure-menu-item"><a href="html/articles" class="pure-menu-link">Articles</a></li>
+          
+
+            <li class="pure-menu-item"><a href="html/work" class="pure-menu-link">Work</a></li>
+
+
+            <li class="pure-menu-item"><a href="html/about" class="pure-menu-link">About</a></li>
       
-          
-            <li class="pure-menu-item"><a href="/archives" class="pure-menu-link">Archives</a></li>
-          
-      
-          
-            <li class="pure-menu-item"><a href="/tags" class="pure-menu-link">Tags</a></li>
-          
-      
-          
-            <li class="pure-menu-item"><a href="/search" class="pure-menu-link">Search</a></li>
-          
-      
-          
-            <li class="pure-menu-item"><a href="https://0xff000000.com" target="_blank" rel="noopener" class="pure-menu-link">About</a></li>
-          
-      
-          
-            <li class="pure-menu-item"><a href="/atom.xml" class="pure-menu-link">RSS</a></li>
-          
+
       
   </ul>
    
@@ -78,22 +71,16 @@
     
 
       <article class="recent-post-item">
-        <a class="title" href="/2020/06/29/hello-world/"><h2>王鑫垚的个人主页</h2></a>
+        <a class="title" href="/"><h2>王鑫垚的个人主页</h2></a>
         <div class="post-meta">
           
-          <time class="time" datetime="2020-06-28T21:07:03.296Z">
-            2020-06-29
-          </time>
-          
+          <input type="text" id="clock">
+
           <span class="slash">/</span>
-          
-          
           
 
         </div>
 
-        
-        <a class="more" href="/2020/06/29/hello-world/"> 阅读全文〉</a>
       </article>
     
   </div>
@@ -117,6 +104,7 @@
   
 
 <script>
+
   (function(window, document, undefined) {
 
     var timer = null;
@@ -239,6 +227,18 @@
     }
 
   })(window, document);
+
+  setInterval("showTime()",1000)
+  function showTime() {
+      var t = new Date()
+      var year = t.getFullYear()
+      var month = t.getMonth()
+      var day = t.getDay()
+      var showTime = year+"/"+month+"/"+day
+
+      document.getElementById("clock").value = showTime
+  }
+
 </script>
 
   
